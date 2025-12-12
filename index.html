@@ -1,0 +1,905 @@
+
+
+<!-- NEW_02_Prellenado_Formulario_EGADE -->
+
+<!DOCTYPE html>
+<html lang='es'>
+<head><meta name="ROBOTS" content="INDEX,FOLLOW"><meta name="keywords" content="">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>EGADE</title>
+    <meta name='description' content='description'>
+    <link href='https://tec.mx/sites/default/files/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+
+   
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+    <!-- CSS LANDING ESSENTIALS MASTER -->
+    <link rel='stylesheet' href='https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/u30tm5hxobb'>
+    <!-- CSS LANDING ESSENTIALS EGADE -->
+    <link rel='stylesheet' href='https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/zifhhc5hrlt'>
+    <!-- CSS TEMPLATE -->
+    <link rel="stylesheet" href="https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/dswfqrkk052">
+    <style>
+        form .form-check.terms .form-check-label { 
+            color: #ffffff;
+        }
+        form .form-check.terms .form-check-label a {
+            color: #ffffff;
+        }
+        label, label:not(.hs-error-msg) {
+            color: #FFFFFF;
+            margin: -10px 0px 0px 0px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        form .form-control {
+            /* display: inline-block; */
+            /* width: 90%; */
+            /* max-width: 500px; */
+            /* height: 40px; */
+            padding: 9px 10px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 22px;
+            color: #000000;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            border-radius: 25px;
+            background: #ffffff !important;
+            margin: 20px 0px 0px 0px;
+        }
+        .btn.is-blue-secondary:hover, .btn.is-blue-secondary:focus, .btn.is-blue-secondary:active {
+            color: #fff;
+            border-color: #ff7a59;
+            background-color: #ff7a59;
+
+        }
+        .btn.is-blue-secondary {
+            color: #fff;
+            background-color: #d24937;
+        }
+        .invalid-feedback { 
+            margin-top: .2rem;
+            font-size: .85em;
+            color: #ff9626;
+        }
+    </style>
+</head>
+
+
+<body style="background-color: #040F37;">
+
+    <div class=''>
+        <!-- Content -->
+        <!-- cs-header -->
+
+      
+    <section class=" " style=" background-color: #040F37;">
+            <div class="row ">
+               
+ <!-- FORMULARIO-->
+  <div class=" " style=" background-color: #040F37;">
+    <div class="container ">
+        <div class="row  ">
+            <div class="col-12 ">
+                <div class="form-content py-5 py-lg-4">
+      <form id="Formulario" method="POST" novalidate action="https://egade-admisiones.tec.mx/egade-process">
+                            <!-- This hidden input tells AMPscript a submission occurred -->
+                                    <input type="hidden" name="isSubmitted" value="true" />
+                                    <div class="row">
+                                       
+                                    <!-- input nombre -->
+                                                    <div class="col-12 col-lg-6 mb-4">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="Estudiante_FirstName" name ="Estudiante_FirstName" required>
+                                                            <label class="label_input" >Nombre</label>
+                                                            <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <!-- input apellido paterno -->
+                                                    <div class="col-12 col-lg-6 mb-4">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="Estudiante_ApellidoPaterno" name ="Estudiante_ApellidoPaterno" required>
+                                                            <label class="label_input" >Primer apellido</label>
+                                                            <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                        </div>
+                                                    </div>
+                    
+                                                     <!-- input apellido materno -->
+                                                    <div class="col-12 col-lg-6 mb-4">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="Estudiante_ApellidoMaterno" name ="Estudiante_ApellidoMaterno" >
+                                                            <label class="label_input" >Segundo apellido</label>
+                                                        </div>
+                                                    </div>
+                                                
+                                                     <!-- SEXO LEGAL-->
+                                                    <div class="col-12 col-lg-6 mb-4">
+                                                      <div class="form-group">
+                                                          <select class="form-control" name="Estudiante_SexoLegal" required>
+                                                              <option value="" disabled selected>Selecciona una opción</option>
+                                                              <option value="Mujer">Mujer</option>
+                                                              <option value="Hombre">Hombre</option>
+                                                              <option value="No Binario">No Binario</option>
+                                                          </select>
+                                                          <label class="label_input" >Sexo legal</label>
+                                                          <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                      </div>
+                                                  </div>
+                    
+                                                    <!-- teléfono locale -->
+                                                    <div class="col-12 col-lg-6 mb-4">
+                                                      <div class="form-group">
+                                                        <select name="PREFIJO_CELULAR" id="prefijo" class="form-control form-select" required>
+                                                          <option value="" disabled selected>Selecciona tu país</option>
+                                                            <option value="93">Afganistán (+93)</option>
+                                                            <option value="355">Albania (+355)</option>
+                                                            <option value="213">Argelia (+213)</option>
+                                                            <option value="376">Andorra (+376)</option>
+                                                            <option value="244">Angola (+244)</option>
+                                                            <option value="1264">Anguila (+1264)</option>
+                                                            <option value="672">Antártida (+672)</option>
+                                                            <option value="1268">Antigua y Barbuda (+1268)</option>
+                                                            <option value="54">Argentina (+54)</option>
+                                                            <option value="374">Armenia (+374)</option>
+                                                            <option value="297">Aruba (+297)</option>
+                                                            <option value="61">Australia (+61)</option>
+                                                            <option value="43">Austria (+43)</option>
+                                                            <option value="994">Azerbaiyán (+994)</option>
+                                                            <option value="1242">Bahamas (+1242)</option>
+                                                            <option value="973">Baréin (+973)</option>
+                                                            <option value="880">Bangladés (+880)</option>
+                                                            <option value="1246">Barbados (+1246)</option>
+                                                            <option value="375">Bielorrusia (+375)</option>
+                                                            <option value="32">Bélgica (+32)</option>
+                                                            <option value="501">Belice (+501)</option>
+                                                            <option value="229">Benín (+229)</option>
+                                                            <option value="1441">Bermudas (+1441)</option>
+                                                            <option value="975">Bután (+975)</option>
+                                                            <option value="591">Bolivia (+591)</option>
+                                                            <option value="387">Bosnia y Herzegovina (+387)</option>
+                                                            <option value="267">Botsuana (+267)</option>
+                                                            <option value="55">Brasil (+55)</option>
+                                                            <option value="673">Brunéi (+673)</option>
+                                                            <option value="359">Bulgaria (+359)</option>
+                                                            <option value="226">Burkina Faso (+226)</option>
+                                                            <option value="257">Burundi (+257)</option>
+                                                            <option value="56">Chile (+56)</option>
+                                                            <option value="86">China (+86)</option>
+                                                            <option value="57">Colombia (+57)</option>
+                                                            <option value="506">Costa Rica (+506)</option>
+                                                            <option value="385">Croacia (+385)</option>
+                                                            <option value="53">Cuba (+53)</option>
+                                                            <option value="599">Curazao (+599)</option>
+                                                            <option value="45">Dinamarca (+45)</option>
+                                                            <option value="593">Ecuador (+593)</option>
+                                                            <option value="20">Egipto (+20)</option>
+                                                            <option value="503">El Salvador (+503)</option>
+                                                            <option value="971">Emiratos Árabes Unidos (+971)</option>
+                                                            <option value="593">Eritrea (+291)</option>
+                                                            <option value="421">Eslovaquia (+421)</option>
+                                                            <option value="386">Eslovenia (+386)</option>
+                                                            <option value="34">España (+34)</option>
+                                                            <option value="1">Estados Unidos (+1)</option>
+                                                            <option value="372">Estonia (+372)</option>
+                                                            <option value="251">Etiopía (+251)</option>
+                                                            <option value="63">Filipinas (+63)</option>
+                                                            <option value="358">Finlandia (+358)</option>
+                                                            <option value="33">Francia (+33)</option>
+                                                            <option value="241">Gabón (+241)</option>
+                                                            <option value="220">Gambia (+220)</option>
+                                                            <option value="995">Georgia (+995)</option>
+                                                            <option value="49">Alemania (+49)</option>
+                                                            <option value="233">Ghana (+233)</option>
+                                                            <option value="30">Grecia (+30)</option>
+                                                            <option value="502">Guatemala (+502)</option>
+                                                            <option value="509">Haití (+509)</option>
+                                                            <option value="504">Honduras (+504)</option>
+                                                            <option value="36">Hungría (+36)</option>
+                                                            <option value="91">India (+91)</option>
+                                                            <option value="62">Indonesia (+62)</option>
+                                                            <option value="98">Irán (+98)</option>
+                                                            <option value="964">Irak (+964)</option>
+                                                            <option value="353">Irlanda (+353)</option>
+                                                            <option value="972">Israel (+972)</option>
+                                                            <option value="39">Italia (+39)</option>
+                                                            <option value="81">Japón (+81)</option>
+                                                            <option value="962">Jordania (+962)</option>
+                                                            <option value="7">Kazajistán (+7)</option>
+                                                            <option value="254">Kenia (+254)</option>
+                                                            <option value="965">Kuwait (+965)</option>
+                                                            <option value="371">Letonia (+371)</option>
+                                                            <option value="961">Líbano (+961)</option>
+                                                            <option value="370">Lituania (+370)</option>
+                                                            <option value="352">Luxemburgo (+352)</option>
+                                                            <option value="853">Macao (+853)</option>
+                                                            <option value="261">Madagascar (+261)</option>
+                                                            <option value="60">Malasia (+60)</option>
+                                                            <option value="223">Malí (+223)</option>
+                                                            <option value="356">Malta (+356)</option>
+                                                            <option value="52">México (+52)</option>
+                                                            <option value="373">Moldavia (+373)</option>
+                                                            <option value="377">Mónaco (+377)</option>
+                                                            <option value="976">Mongolia (+976)</option>
+                                                            <option value="212">Marruecos (+212)</option>
+                                                            <option value="258">Mozambique (+258)</option>
+                                                            <option value="95">Myanmar (+95)</option>
+                                                            <option value="264">Namibia (+264)</option>
+                                                            <option value="977">Nepal (+977)</option>
+                                                            <option value="31">Países Bajos (+31)</option>
+                                                            <option value="64">Nueva Zelanda (+64)</option>
+                                                            <option value="505">Nicaragua (+505)</option>
+                                                            <option value="234">Nigeria (+234)</option>
+                                                            <option value="47">Noruega (+47)</option>
+                                                            <option value="92">Pakistán (+92)</option>
+                                                            <option value="507">Panamá (+507)</option>
+                                                            <option value="595">Paraguay (+595)</option>
+                                                            <option value="51">Perú (+51)</option>
+                                                            <option value="48">Polonia (+48)</option>
+                                                            <option value="351">Portugal (+351)</option>
+                                                            <option value="974">Qatar (+974)</option>
+                                                            <option value="40">Rumanía (+40)</option>
+                                                            <option value="7">Rusia (+7)</option>
+                                                            <option value="966">Arabia Saudita (+966)</option>
+                                                            <option value="221">Senegal (+221)</option>
+                                                            <option value="65">Singapur (+65)</option>
+                                                            <option value="421">Eslovaquia (+421)</option>
+                                                            <option value="27">Sudáfrica (+27)</option>
+                                                            <option value="82">Corea del Sur (+82)</option>
+                                                            <option value="34">España (+34)</option>
+                                                            <option value="94">Sri Lanka (+94)</option>
+                                                            <option value="46">Suecia (+46)</option>
+                                                            <option value="41">Suiza (+41)</option>
+                                                            <option value="886">Taiwán (+886)</option>
+                                                            <option value="255">Tanzania (+255)</option>
+                                                            <option value="66">Tailandia (+66)</option>
+                                                            <option value="90">Turquía (+90)</option>
+                                                            <option value="380">Ucrania (+380)</option>
+                                                            <option value="971">Emiratos Árabes Unidos (+971)</option>
+                                                            <option value="44">Reino Unido (+44)</option>
+                                                            <option value="1">Estados Unidos (+1)</option>
+                                                            <option value="598">Uruguay (+598)</option>
+                                                            <option value="998">Uzbekistán (+998)</option>
+                                                            <option value="58">Venezuela (+58)</option>
+                                                            <option value="84">Vietnam (+84)</option>
+                                                            <option value="967">Yemen (+967)</option>
+                                                            <option value="260">Zambia (+260)</option>
+                                                            <option value="263">Zimbabue (+263)</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Selecciona un prefijo.</div>
+                                                      </div>
+                                                    </div>
+                    
+                                                  <!-- teléfono locale -->
+                                                    <div class="col-12 col-lg-6 mb-4">
+                                                      <div class="form-group">
+                                                      <input type="tel" class="form-control" name="Estudiante_Phone" id="Estudiante_Phone" required>
+                                                      <label class="label_input" >CELULAR</label>
+                                                      <div class="invalid-feedback">Ingresa solo números (6 a 15 dígitos), según tu país</div>
+                                                      </div>
+                                                    </div>
+                                                
+                                                    <!-- Input correo -->
+                                                    <div class="col-12 mb-4">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control"  id="Estudiante_Email" name ="Estudiante_Email" required>
+                                                            <label class="label_input">Correo electrónico</label>
+                                                            <div class="invalid-feedback">Ingresa un correo válido.</div>
+                                                        </div>
+                                                    </div>
+                    
+                                                  <!-- Nombre de universidad input-->
+                                                  <div class="col-12 mb-4">
+                                                          <div class="form-group">
+                                                              <input type="text" class="form-control"  name ="Universidad_Graduacion" required>
+                                                              <label class="label_input">Nombre de universidad</label>
+                                                              <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                          </div>
+                                                  </div>
+                    
+                                        
+                    <!-- Año de graduacion-->
+                          <div class="col-12 mb-4">
+                            <div class="form-group">
+                                <input type="text"  class="form-control" name="a_os_graduacion" id="anios_profesional" min="1950" max="2100" required />
+                              <label for="anios_profesional" class="label_input">Año de graduación de universidad</label>
+                                <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                <div id="mensaje" style="color:#FF0000;margin-top: 10px;"></div>
+                           </div>
+                          </div>
+                   <!-- Periodo de interes-->         
+                      <div class="col-12 mb-4">
+                          <div class="form-group">           
+                            <select id="periodo" name="periodo_de_interes_pivote" disabled  class="form-control form-select" required>
+                               <option value="">Seleccione un periodo</option>
+                            </select>
+                            <label for="periodo" class="label_input">Periodo esperado de ingreso*</label>
+                            <div class="invalid-feedback">Este campo es obligatorio.</div>
+                         </div>
+                     </div> 
+                  <!-- Programa de interes-->
+                <!-- Campo oculto para guardar el programa -->
+                  <input type="hidden" id="programa" name="programa_de_interes_pivote">
+                                      
+                <!-- Sede de interes-->
+                <div class="col-12 mb-4">
+                  <div class="form-group">
+                  <!-- Selección de Sede -->
+                  <select id="sede" name="campus_de_interes_pivote" class="form-control form-select" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                  </select>    
+                     <label for="sede" class="label_input">Seleccione una sede</label>
+                    <div class="invalid-feedback">Este campo es obligatorio.</div>
+                 </div>
+                </div>
+
+
+               <!-- Horario preferido de atención-->
+                     <div class="col-12 mb-4">
+                         <div class="form-group">
+                             <select class="form-control" id="Horario_Contacto" name="Horario_Contacto" required>
+                                <option value="" disabled selected>Selecciona tu horario preferido de atención</option>
+                                <option value="10:00 am a 3:00 pm">10:00 am a 3:00 pm</option>
+                                 <option value="3:00 pm a 7:00 pm">3:00 pm a 7:00 pm</option>
+                              </select>
+                              <label class="label_input" >Horario preferido de atención</label>
+                              <div class="invalid-feedback">Este campo es obligatorio.</div>
+                           </div>
+                       </div>
+                    <!-- Terminos y condiciones -->
+                        <div class="row justify-content-center">
+                           <div class="col-12">
+                               <input type="hidden" name="aviso_privacidad" id="aviso_privacidad_input" value="false">
+                              <div class="form-check terms mt-4">
+                                <input class="form-check-input" type="checkbox" id="avisoCheckbox">
+                                    <!-- agregar enlace de terminos y condiciones en el href -->
+                                        <label class="form-check-label" for="avisoCheckbox">
+                                      He leído y acepto los términos y condiciones del 
+                          <a href="https://tec.mx/es/aviso-de-privacidad-prospectos" target="_blank" rel="noopener noreferrer">AVISO DE PRIVACIDAD*</a>
+                                        </label>
+                                         <div class="invalid-feedback">Acepta el aviso de privacidad.</div>
+                                </div>
+                        <!-- Consentimiento whatsapp -->
+                              <input type="hidden" name="comunicacion_whatsapp" id="whatsapp_input" value="false">
+                             <div class="form-check terms mt-4">
+                               <input class="form-check-input" type="checkbox" id="whatsappCheckbox">
+                                 <label class="form-check-label" for="whatsappCheckbox">Quiero recibir comunicación vía WhatsApp </label>
+                              </div>
+                    
+                            </div>
+                        </div>
+
+                <!-- Programa claves -->
+                    <input id="programaClave" name="Programa_ClaveBanner" type="hidden" />
+                     <input id="periodoClave" name="Periodo_Clave" type="hidden" />                 
+                    <input id="sedeClave" name="Sede_Clave" type="hidden" />   
+                    <input id="agrupacionClave" name="Agrupacion_Clave" type="hidden" />  
+                                      
+              <!-- Información oculta de atribución -->
+        <div id="Informacion_Atribucion">
+          <input static id="utm_campaign" name="utm_campaign" type="hidden" value="" />
+          <input static id="utm_source" name="utm_source" type="hidden" value="" />
+          <input static id="utm_term" name="utm_term" type="hidden" value="" />
+          <input static id="utm_content" name="utm_content" type="hidden" value="" />
+          <input static id="utm_medium" name="utm_medium" type="hidden" value="" />
+          <input static id="utm_cve_sede_iniciativa" name="utm_cve_sede_iniciativa" type="hidden" value="" />
+          <input static id="utm_cve_periodo_iniciativa" name="utm_cve_periodo_iniciativa" type="hidden" value="" />
+          <input static id="adm_url_landing__c" name="adm_url_landing__c" type="hidden" value="https://egade-admisiones.tec.mx/form-contact-MAF" />
+          <input name="adm_wl_clave_origen__c" type="hidden" value="Marketing Digital" />
+          <input name="adm_wl_clave_estatus__c" type="hidden" />
+          <input name="adm_sistema_origen__c" type="hidden" value="Marketing Cloud" />
+   <!-- Campo modalidad oculto que se llenará automáticamente -->
+         <input type="hidden" id="modalidad" name="adm_modalidad__c" value=""/>
+          <input name="adm_wl_clave_nivel__c" type="hidden" value="08" />
+          <input name="business_unit__pivote_" type="hidden" value="Egade" />
+          <!-- Otros hiddden -->
+          <input name="Tipo_Formulario" type="hidden" value="Posgrado" />
+          <input type="hidden" name="Estudiante_CodePhone" id="Estudiante_CodePhone" value="" />
+          
+        </div>
+                   <div class="col-12 d-flex justify-content-center mt-4">
+    <button type="submit" class="btn btn-cta is-blue-secondary px-5" id="buttonForm">Enviar</button>
+</div>
+                                      
+  </div><br>                   
+  </form>
+     <!-- SCRIPT PARA LA REVISION DE LOS DATOS DE PROGRAMA, SEDE DE ACUERDO AL AÑO DE GRADUACION -->
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+  const rawData = `[{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Ciudad de México","periodo":"Trimestral Sep - Dic de 2025","programaClave":"MAF24","periodoClave":"202524","sedeClave":"ASF","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Monterrey","periodo":"Trimestral Sep - Dic de 2025","programaClave":"MAF24","periodoClave":"202524","sedeClave":"AMT","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Online","periodo":"Trimestral Sep - Dic de 2025","programaClave":"MAF24L","periodoClave":"202524","sedeClave":"EDG","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Online","periodo":"Trimestral Sep - Dic de 2026","programaClave":"MAF24L","periodoClave":"202624","sedeClave":"EDG","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Online","periodo":"Trimestral Abr - Jul de 2026","programaClave":"MAF24L","periodoClave":"202622","sedeClave":"EDG","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Monterrey","periodo":"Trimestral Abr - Jul de 2026","programaClave":"MAF24","periodoClave":"202622","sedeClave":"AMT","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Monterrey","periodo":"Trimestral Sep - Dic de 2026","programaClave":"MAF24","periodoClave":"202624","sedeClave":"AMT","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Ciudad de México","periodo":"Trimestral Abr - Jul de 2026","programaClave":"MAF24","periodoClave":"202622","sedeClave":"ASF","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Ciudad de México","periodo":"Trimestral Sep - Dic de 2026","programaClave":"MAF24","periodoClave":"202624","sedeClave":"ASF","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Online","periodo":"Trimestral Abr - Jul de 2027","programaClave":"MAF24L","periodoClave":"202722","sedeClave":"EDG","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Online","periodo":"Trimestral Sep - Dic de 2027","programaClave":"MAF24L","periodoClave":"202724","sedeClave":"EDG","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Monterrey","periodo":"Trimestral Abr - Jul de 2027","programaClave":"MAF24","periodoClave":"202722","sedeClave":"AMT","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Monterrey","periodo":"Trimestral Sep - Dic de 2027","programaClave":"MAF24","periodoClave":"202724","sedeClave":"AMT","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Ciudad de México","periodo":"Trimestral Abr - Jul de 2027","programaClave":"MAF24","periodoClave":"202722","sedeClave":"ASF","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Ciudad de México","periodo":"Trimestral Sep - Dic de 2027","programaClave":"MAF24","periodoClave":"202724","sedeClave":"ASF","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Online","periodo":"Trimestral Abr - Jul de 2028","programaClave":"MAF24L","periodoClave":"202822","sedeClave":"EDG","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Online","periodo":"Trimestral Sep - Dic de 2028","programaClave":"MAF24L","periodoClave":"202824","sedeClave":"EDG","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Monterrey","periodo":"Trimestral Abr - Jul de 2028","programaClave":"MAF24","periodoClave":"202822","sedeClave":"AMT","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Monterrey","periodo":"Trimestral Sep - Dic de 2028","programaClave":"MAF24","periodoClave":"202824","sedeClave":"AMT","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Ciudad de México","periodo":"Trimestral Abr - Jul de 2028","programaClave":"MAF24","periodoClave":"202822","sedeClave":"ASF","agrupacionClave":"EGD-M"},{"rango":"1950-2022","programa":"Maestría en Finanzas","sede":"Ciudad de México","periodo":"Trimestral Sep - Dic de 2028","programaClave":"MAF24","periodoClave":"202824","sedeClave":"ASF","agrupacionClave":"EGD-M"}]`;
+
+  let data = [];
+  try {
+    data = JSON.parse(rawData); //  ya viene solo MAF por el filtro de AMPscript
+  } catch (e) {
+    console.error("Error al procesar los datos:", e);
+    return;
+  }
+
+  const yearInput = document.getElementById("anios_profesional");
+
+// oculto en HTML no se solicita para que lo seleccionen, si no por default
+  const programaSelect = document.getElementById("programa"); 
+  const sedeSelect = document.getElementById("sede");
+  const periodoSelect = document.getElementById("periodo");
+  const mensajeDiv = document.getElementById("mensaje");
+  const modalidadInput = document.getElementById("modalidad");
+
+  // Mapea TODOS los campos usando Periodo + Sede
+
+  function mapearPorPeriodoYSede() {
+    const selectedPeriodo = periodoSelect.value;
+    const selectedSede = sedeSelect.value;
+    if (!selectedPeriodo || !selectedSede) return;
+
+    // Tomamos el pool del periodo ya guardado en dataset (solo MAF)
+    const pool = JSON.parse(programaSelect.dataset.programas || "[]");
+
+    // Match final por Periodo + Sede (MAF ya garantizado)
+    const resultado = pool.find(item =>
+      item.periodo === selectedPeriodo &&
+      item.sede === selectedSede
+    );
+
+    if (resultado) {
+      // Seteamos el nombre del programa en el select oculto
+      programaSelect.value = resultado.programa || "";
+
+      // Premapeo de claves
+      document.getElementById("programaClave").value = resultado.programaClave || "";
+      document.getElementById("periodoClave").value = resultado.periodoClave || "";
+      document.getElementById("sedeClave").value = resultado.sedeClave || "";
+      document.getElementById("agrupacionClave").value = resultado.agrupacionClave || "";
+
+      // Modalidad: L = online, P = presencial
+      modalidadInput.value = selectedSede.toLowerCase().includes("online") ? "L" : "P";
+    } else {
+      // Reset si no hay match válido
+      programaSelect.value = "";
+      document.getElementById("programaClave").value = "";
+      document.getElementById("periodoClave").value = "";
+      document.getElementById("sedeClave").value = "";
+      document.getElementById("agrupacionClave").value = "";
+      modalidadInput.value = "";
+    }
+  }
+
+  // Año - llena Periodos (deja dataset general del rango) 
+  yearInput.addEventListener("input", function () {
+    const year = parseInt(this.value);
+    periodoSelect.innerHTML = '<option value="">Seleccione un periodo</option>';
+    programaSelect.innerHTML = '<option value="">Seleccione una opción</option>';
+    sedeSelect.innerHTML = '<option value="">Seleccione una opción</option>';
+    mensajeDiv && (mensajeDiv.textContent = "");
+
+    if (this.value.length !== 4 || isNaN(year)) {
+      if (mensajeDiv) mensajeDiv.textContent = "Ingrese un año válido de 4 dígitos.";
+      periodoSelect.disabled = true;
+      return;
+    }
+
+    // Filtrado por rango del campo Comentarios
+    const programasFiltrados = data.filter(item => {
+      const rango = item.rango;
+      if (rango === "1950-2022" && year >= 1950 && year <= 2022) return true;
+      if (rango === "2023-2027" && year >= 2023 && year <= 2027) return true;
+      if (rango === ">=2025" && year >= 2025) return true;
+      return false;
+    });
+
+    const periodosUnicos = [];
+    const nombresVistos = new Set();
+    programasFiltrados.forEach(item => {
+      if (!nombresVistos.has(item.periodo)) {
+        nombresVistos.add(item.periodo);
+        periodosUnicos.push(item.periodo);
+      }
+    });
+
+    if (periodosUnicos.length === 0) {
+      if (mensajeDiv) mensajeDiv.textContent = "No hay periodos disponibles para el año ingresado.Debe ser menor o igual a 2022";
+      periodoSelect.disabled = true;
+      return;
+    }
+
+    periodoSelect.disabled = false;
+    periodosUnicos.forEach(nombre => {
+      const option = document.createElement("option");
+      option.value = nombre;
+      option.textContent = nombre;
+      periodoSelect.appendChild(option);
+    });
+
+    // Guardamos TODO el pool del rango en el dataset del periodo
+    // aunque ya viene solo MAF, se mantiene la estructura
+    periodoSelect.dataset.programas = JSON.stringify(programasFiltrados);
+  });
+
+  //  Periodo - llena Sedes SOLO de MAF y guarda dataset del periodo (MAF) 
+  periodoSelect.addEventListener("change", function () {
+    const selectedPeriodo = this.value;
+    const programasDelRango = JSON.parse(this.dataset.programas || "[]");
+
+    // Del rango, tomar solo MAF del periodo seleccionado
+    const mmtDelPeriodo = programasDelRango.filter(item =>
+      item.periodo === selectedPeriodo && (item.programaClave || "").indexOf("MAF") >= 0
+    );
+
+    // Poblar sedes únicas
+    const sedesUnicas = [...new Set(mmtDelPeriodo.map(item => item.sede))];
+
+    sedeSelect.innerHTML = '<option value="">Seleccione una opción</option>';
+    sedeSelect.disabled = false;
+    sedesUnicas.forEach(nombre => {
+      const option = document.createElement("option");
+      option.value = nombre;
+      option.textContent = nombre;
+      sedeSelect.appendChild(option);
+    });
+
+    // Guardar SOLO MAF del periodo en dataset del programa (pool para el mapeo final)
+    programaSelect.dataset.programas = JSON.stringify(mmtDelPeriodo);
+
+    // Si por alguna razón ya hay sede seleccionada (prefill), intentar mapear ahora
+    mapearPorPeriodoYSede();
+  });
+
+  // Sede → mapeo FINAL (Periodo + Sede) y asignación de todos los campos
+  sedeSelect.addEventListener("change", function () {
+    mapearPorPeriodoYSede();
+  });
+});
+</script>
+
+
+                          
+    <!-- SCRIPT PARA DE VALIDACIONES DE CAMPOS OBLIGATORIOS  -->
+  <script>
+        const form = document.getElementById('Formulario');
+ 
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+ 
+        let valid = true;
+ 
+        // Validar todos los campos requeridos
+        const requiredFields = form.querySelectorAll('[required]');
+        requiredFields.forEach(field => {
+          const isSelect = field.tagName === 'SELECT';
+          const value = field.value.trim();
+ 
+          if (!value || (isSelect && value === '')) {
+            field.classList.add('is-invalid');
+            valid = false;
+          } else {
+            field.classList.remove('is-invalid');
+          }
+        });
+ 
+        // Validar campo de email
+        const emailField = document.getElementById("Estudiante_Email");
+        const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+        if (!emailRegex.test(emailField.value.trim())) {
+          emailField.classList.add('is-invalid');
+          valid = false;
+        } else {
+          emailField.classList.remove('is-invalid');
+        }
+ 
+        // Validar campo de celular (6 a 15 dígitos numéricos)
+        const celular = document.getElementById('Estudiante_Phone');
+        if (!/^[0-9]{6,15}$/.test(celular.value.trim())) {
+          celular.classList.add('is-invalid');
+          valid = false;
+        } else {
+          celular.classList.remove('is-invalid');
+        }
+ 
+        // Validar checkbox de aviso de privacidad
+        const avisoCheckbox = document.getElementById('avisoCheckbox');
+        if (!avisoCheckbox.checked) {
+          avisoCheckbox.classList.add('is-invalid');
+          valid = false;
+        } else {
+          avisoCheckbox.classList.remove('is-invalid');
+        }
+ 
+        // Actualizar los campos hidden con el valor actual de los checkboxes
+        document.getElementById('aviso_privacidad_input').value = avisoCheckbox.checked ? 'true' : 'false';
+        const whatsappCheckbox = document.getElementById('whatsappCheckbox');
+        document.getElementById('whatsapp_input').value = whatsappCheckbox.checked ? 'true' : 'false';
+ 
+        // Copiar el valor del prefijo al campo oculto estudiante_code
+        const prefijo = document.getElementById('prefijo');
+        document.getElementById('Estudiante_CodePhone').value = prefijo.value;
+ 
+        // Si todo es válido, enviar el formulario
+        if (valid) {
+          form.removeEventListener('submit', arguments.callee);
+          form.submit();
+        }
+      });
+ 
+      </script>
+
+
+                                
+                            </div> 
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+              </div>
+           
+            
+        </section>
+
+</div>
+
+    
+    <!-- JQUERY -->
+    <script src='https://code.jquery.com/jquery-1.8.3.min.js'></script>
+      
+ 
+   <!-- NEW_03_Prellenado_Formulario_EGADE -->
+   <script>
+    let debugging = true;
+
+function debug(...v) {
+    if (debugging) {
+        console.log(...v);
+    }
+}
+
+function info(...v) {
+    debug('%cINFO', 'background: #000000; color: #8f7700;', ...v);
+}
+
+function warn(...v) {
+    debug('%cWARN', 'background: #000000; color: #7a0000;', ...v);
+}
+
+function err(...v) {
+    debug('%cERROR', 'background: #ff0000; color: #ffffff;', ...v);
+}
+
+// Función para encontrar opción en select por texto
+function encontrarOpcionPorTexto(selectElement, textoBuscado) {
+    if (!selectElement || !textoBuscado) return null;
+    
+    for (const option of selectElement.options) {
+        if (option.textContent.trim().toLowerCase() === textoBuscado.toLowerCase()) {
+            return option.value;
+        }
+    }
+    return null;
+}
+
+// Función para mapear valores del formulario
+function mapearValoresFormulario(rowData, programasData) {
+    try {
+        if (!rowData || !programasData || !Array.isArray(programasData)) {
+            warn('Datos inválidos para mapeo');
+            return null;
+        }
+        
+        const coincidencia = programasData.find(item => 
+            item.periodoClave === rowData.Periodo_Clave &&
+            item.programaClave === rowData.Programa_ClaveBanner &&
+            item.sedeClave === rowData.Sede_Clave
+        );
+        
+        if (coincidencia) {
+            info('Coincidencia encontrada:', coincidencia);
+            return {
+                periodo: coincidencia.periodo,
+                programa: coincidencia.programa,
+                sede: coincidencia.sede,
+                agrupacionClave: coincidencia.agrupacionClave
+            };
+        } else {
+            warn('No hay coincidencia para:', {
+                periodoClave: rowData.Periodo_Clave,
+                programaClave: rowData.Programa_ClaveBanner,
+                sedeClave: rowData.Sede_Clave
+            });
+            return null;
+        }
+    } catch (e) {
+        err('Error en mapearValoresFormulario:', e);
+        return null;
+    }
+}
+
+// Función principal de prellenado
+function prellenarFormulario() {
+    try {
+        // Obtener el row desde Marketing Cloud
+        let rowData;
+        try {
+            rowData = null;
+            console.log('Row data from Marketing Cloud:', rowData);
+            
+            // Parsear si viene como string
+            if (typeof rowData === 'string') {
+                rowData = JSON.parse(rowData.replace(/\\/g, ''));
+            }
+        } catch (e) {
+            err('Error al obtener/parsear row de Marketing Cloud:', e);
+            rowData = {};
+        }
+
+        info('Datos del row para prellenar:', rowData);
+        
+        if (Object.keys(rowData).length === 0) {
+            warn('No hay datos en row para prellenar');
+            return;
+        }
+        
+        // Obtener datos de programas
+        let datosProgramas = [];
+        try {
+            if (typeof rawData !== 'undefined') {
+                datosProgramas = JSON.parse(rawData);
+                info('Datos de programas cargados:', datosProgramas.length, 'registros');
+            } else {
+                warn('rawData no está definido');
+            }
+        } catch (e) {
+            err('Error al parsear rawData:', e);
+        }
+        
+        // Mapear valores de periodo, programa y sede
+        const valoresMapeados = mapearValoresFormulario(rowData, datosProgramas);
+        
+        // Prellenar campos hidden con las claves
+        if (rowData.Periodo_Clave) {
+            document.getElementById('periodoClave').value = rowData.Periodo_Clave;
+        }
+        if (rowData.Programa_ClaveBanner) {
+            document.getElementById('programaClave').value = rowData.Programa_ClaveBanner;
+        }
+        if (rowData.Sede_Clave) {
+            document.getElementById('sedeClave').value = rowData.Sede_Clave;
+        }
+        if (rowData.Agrupacion_Clave) {
+            document.getElementById('agrupacionClave').value = rowData.Agrupacion_Clave;
+        }
+        
+        if (valoresMapeados) {
+            // Prellenar los campos mapeados
+            const periodoSelect = document.getElementById('periodo');
+            const programaSelect = document.getElementById('programa');
+            const sedeSelect = document.getElementById('sede');
+            
+            if (periodoSelect && valoresMapeados.periodo) {
+                const valorPeriodo = encontrarOpcionPorTexto(periodoSelect, valoresMapeados.periodo);
+                if (valorPeriodo) {
+                    periodoSelect.value = valorPeriodo;
+                    $(periodoSelect).trigger('change');
+                    info('Periodo prellenado:', valoresMapeados.periodo);
+                }
+            }
+            
+            if (programaSelect && valoresMapeados.programa) {
+                const valorPrograma = encontrarOpcionPorTexto(programaSelect, valoresMapeados.programa);
+                if (valorPrograma) {
+                    programaSelect.value = valorPrograma;
+                    $(programaSelect).trigger('change');
+                    info('Programa prellenado:', valoresMapeados.programa);
+                }
+            }
+            
+            if (sedeSelect && valoresMapeados.sede) {
+                const valorSede = encontrarOpcionPorTexto(sedeSelect, valoresMapeados.sede);
+                if (valorSede) {
+                    sedeSelect.value = valorSede;
+                    $(sedeSelect).trigger('change');
+                    info('Sede prellenada:', valoresMapeados.sede);
+                }
+            }
+            
+            // Actualizar modalidad
+            const modalidadInput = document.getElementById('modalidad');
+            if (modalidadInput && valoresMapeados.sede) {
+                modalidadInput.value = valoresMapeados.sede.toLowerCase().includes('online') ? 'L' : 'P';
+            }
+        }
+        
+        // Prellenar otros campos del formulario
+        const camposParaPrellenar = [
+            'Estudiante_FirstName', 'Estudiante_ApellidoPaterno', 'Estudiante_ApellidoMaterno',
+            'Estudiante_SexoLegal', 'Estudiante_Phone', 'Estudiante_Email', 'Universidad_Graduacion',
+            'Horario_Contacto', 'a_os_graduacion'
+        ];
+        
+        camposParaPrellenar.forEach(campo => {
+            const elemento = document.getElementById(campo);
+            if (elemento && rowData[campo]) {
+                if (elemento.tagName === 'SELECT') {
+                    elemento.value = rowData[campo];
+                    $(elemento).trigger('change');
+                } else {
+                    elemento.value = rowData[campo];
+                }
+                info('Campo prellenado:', campo, '=', rowData[campo]);
+            }
+        });
+        
+        // Prellenar checkbox de aviso de privacidad
+        if (rowData.aviso_privacidad === 'True') {
+            document.getElementById('avisoCheckbox').checked = true;
+            document.getElementById('aviso_privacidad_input').value = 'true';
+        }
+        
+        // Prellenar checkbox de WhatsApp
+        if (rowData.comunicacion_whatsapp === 'True') {
+            document.getElementById('whatsappCheckbox').checked = true;
+            document.getElementById('whatsapp_input').value = 'true';
+        }
+        
+        // Prellenar prefijo telefónico
+        if (rowData.Estudiante_CodePhone) {
+            document.getElementById('prefijo').value = rowData.Estudiante_CodePhone;
+            document.getElementById('Estudiante_CodePhone').value = rowData.Estudiante_CodePhone;
+        }
+        
+        // Deshabilitar campos después de prellenar
+        setTimeout(() => {
+            const camposDeshabilitar = ['periodo', 'programa', 'sede', 'anios_profesional'];
+            camposDeshabilitar.forEach(campo => {
+                const element = document.getElementById(campo);
+                if (element && element.value) {
+                    element.disabled = true;
+                    info('Campo deshabilitado:', campo);
+                }
+            });
+        }, 3000);
+        
+    } catch (e) {
+        err('Error en prellenarFormulario:', e);
+    }
+}
+
+// Ejecutar cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', function() {
+    info('DOM cargado, iniciando prellenado en 3 segundos...');
+    setTimeout(prellenarFormulario, 3000);
+});
+
+  </script>
+    <!-- JS BOOTSTRAP -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js' integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2' crossorigin='anonymous'></script>
+    <!-- fontawesome -->
+    <script src="https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/sxbmdrr5hgj"></script>
+    <!-- SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/txhqp3yfpym"></script>
+    <script src="https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/ghs1cc0yolh"></script>
+    <script>
+        $('.counter').countUp({
+                'time': 3500,
+                'delay': 10
+        });
+    </script>
+
+    <!-- jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
