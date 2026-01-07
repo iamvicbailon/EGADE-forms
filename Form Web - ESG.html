@@ -1,0 +1,501 @@
+<!-- Capturar información de Data Extension -->
+%%[
+VAR @programa, @sede
+
+SET @programa = "ESG"
+SET @sede = Lookup("EE_Landing_Information", "Sede", "Nombre_Landing", @programa)
+]%%
+
+<!-- Setear esta variable es para especificar de donde van a salir los campos del prellenado -->
+%%[
+SET @nivel = "08"
+]%%
+<!-- NEW_02_Prellenado_Formulario_EGADE -->
+%%=ContentBlockbyId(19689)=%%
+
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+
+
+    <meta name="ROBOTS" content="INDEX,FOLLOW"><meta name="keywords" content="">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>EGADE</title>
+    <meta name='description' content='description'>
+    <link href='https://tec.mx/sites/default/files/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+
+    <!-- Facebook metadata -->
+    <link rel='image_src' href=''/>
+    <meta property='og:type' content='website'/>
+    <meta property='og:title' content='EGADE Business School'/>
+    <meta property='og:description' content=''/>
+    <meta property='og:image' content=''/>
+    <meta property='og:image:width' content='1200'/>
+    <meta property='og:image:height' content='630'/>
+
+    <!-- Twitter Cards -->
+    <meta property='twitter:creator' content='@orangeDigitalCX'/>
+    <meta property='twitter:url' content='https://twitter.com/egade/'>
+    <meta property='twitter:card' content='summary_large_image'/>
+    <meta property='twitter:site' content='@egade'/>
+
+    <!-- Twitter Cards description  -->
+    <meta property='twitter:title' content='EGADE Business School'/>
+    <meta property='twitter:description' content=''/>
+    <meta property='twitter:image:src' content=''/>
+    <meta property='twitter:image:width' content='1200'/>
+    <meta property='twitter:image:height' content='630'/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+    <!-- CSS LANDING ESSENTIALS MASTER -->
+    <link rel='stylesheet' href='https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/u30tm5hxobb'>
+    <!-- CSS LANDING ESSENTIALS EGADE -->
+    <link rel='stylesheet' href='https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/zifhhc5hrlt'>
+    <!-- CSS TEMPLATE -->
+    <link rel="stylesheet" href="https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/dswfqrkk052">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  
+    h1, h2,h4,h3, h5, body, span, b, p, span, strong{
+        font-family: Inter !important; 
+        letter-spacing: inherit;
+    }
+    h1, h2,h4,h3, h5{    font-weight: 600 !important;  }
+    h5{ color: #010048;  }
+    strong, p, article li, input, form option {  font-size: 16px ; }
+    form .form-control.form-select, form option { font-size: 16px;}
+    footer a, footer a b, footer a strong, footer b, footer p, footer strong {  font-size: .75rem !important; } 
+    form .form-control, form  input::placeholder{  color: #000234 !important;   }
+    html[data-theme=dark] form .form-control,html[data-theme=dark] form .form-control::placeholder, html[data-theme=dark] form .form-control:focus { color: #EEECE7 !important; }
+  
+  @media (max-width: 767.98px) {   h1, h2 {  font-size: 30px !important; }  } 
+  
+  .btn-brochure:hover{
+    background: #d24937;
+    color: #fff;
+}
+  .btn-brochure {
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    bottom: 15px;
+    right: 5px;
+        width: fit-content;
+    text-decoration: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 15px 0 15px; 
+    color: #d24937;
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 130%;
+    gap: 10px;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+}
+
+    .big {
+        font-weight: 600;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class='container-fluid noPadding'>
+        <!-- Content -->
+        <!-- cs-header -->
+
+                <!-- Formulario -->
+                <div class="col-lg-6 bg-light">
+                    <div class="container d-lg-flex ">
+                        <div class="row justify-content-center w-100">
+                            <div class="col-12 col-lg-8 d-lg-flex align-items-center noPadding">
+                                <div class="form-content py-5 py-lg-4">
+                                    <form id="Formulario"method="POST" novalidate action="https://egade-admisiones.tec.mx/egade-process">
+                                        <input type="hidden" name="isSubmitted" value="true" />
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h1 class="mb-5">Llena el formulario y descarga el folleto</h1>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mb-4" style="display:none">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="programa_de_interes_pivote" 
+       id="programa_de_interes_pivote" value="ESG y Finanzas sostenibles para la empresa" required>
+                                                    <label class="label_input" for="">Programa</label>
+                                                    <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                </div>
+                                            </div>
+                                            <!-- bloque input nombre -->
+                                            <div class="col-12 col-lg-6 mb-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name ="Estudiante_FirstName" id ="Estudiante_FirstName" required>
+                                                    <label class="label_input" for="">Nombre</label>
+                                                    <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- bloque input primer apellido -->
+                                            <div class="col-12 col-lg-6 mb-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name ="Estudiante_ApellidoPaterno" id ="Estudiante_ApellidoPaterno" required>
+                                                    <label class="label_input" for="">Primer Apellido</label>
+                                                    <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                </div>
+                                            </div>
+
+                                            <!-- bloque input segundo apellido -->
+                                            <div class="col-12 col-lg-6 mb-4">
+                                              <div class="form-group">
+                                                  <input type="text" class="form-control" id ="Estudiante_ApellidoMaterno" name ="Estudiante_ApellidoMaterno">
+                                                  <label class="label_input" for="">Segundo Apellido</label>
+                                                  <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                              </div>
+                                            </div>
+
+                                            <!-- bloque correo -->
+                                          <div class="col-12 col-lg-6 mb-4">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name ="Estudiante_Email" id="Estudiante_Email" required>
+                                                <label class="label_input" for="">Correo</label>
+                                                <div class="invalid-feedback">Ingresa un correo válido.</div>
+                                            </div>
+                                          </div>
+                                            <!-- bloque input teléfono -->
+                                            <div class="col-12 col-lg-6 mb-4">
+                                                <div class="form-group">
+                                                    <select name="PREFIJO_CELULAR" id="prefijo" class="form-control form-select" required>
+                                                        <option value="" disabled selected>Selecciona tu país</option>
+                                                            <option value="93">Afganistán (+93)</option>
+                                                            <option value="355">Albania (+355)</option>
+                                                            <option value="213">Argelia (+213)</option>
+                                                            <option value="376">Andorra (+376)</option>
+                                                            <option value="244">Angola (+244)</option>
+                                                            <option value="1264">Anguila (+1264)</option>
+                                                            <option value="672">Antártida (+672)</option>
+                                                            <option value="1268">Antigua y Barbuda (+1268)</option>
+                                                            <option value="54">Argentina (+54)</option>
+                                                            <option value="374">Armenia (+374)</option>
+                                                            <option value="297">Aruba (+297)</option>
+                                                            <option value="61">Australia (+61)</option>
+                                                            <option value="43">Austria (+43)</option>
+                                                            <option value="994">Azerbaiyán (+994)</option>
+                                                            <option value="1242">Bahamas (+1242)</option>
+                                                            <option value="973">Baréin (+973)</option>
+                                                            <option value="880">Bangladés (+880)</option>
+                                                            <option value="1246">Barbados (+1246)</option>
+                                                            <option value="375">Bielorrusia (+375)</option>
+                                                            <option value="32">Bélgica (+32)</option>
+                                                            <option value="501">Belice (+501)</option>
+                                                            <option value="229">Benín (+229)</option>
+                                                            <option value="1441">Bermudas (+1441)</option>
+                                                            <option value="975">Bután (+975)</option>
+                                                            <option value="591">Bolivia (+591)</option>
+                                                            <option value="387">Bosnia y Herzegovina (+387)</option>
+                                                            <option value="267">Botsuana (+267)</option>
+                                                            <option value="55">Brasil (+55)</option>
+                                                            <option value="673">Brunéi (+673)</option>
+                                                            <option value="359">Bulgaria (+359)</option>
+                                                            <option value="226">Burkina Faso (+226)</option>
+                                                            <option value="257">Burundi (+257)</option>
+                                                            <option value="56">Chile (+56)</option>
+                                                            <option value="86">China (+86)</option>
+                                                            <option value="57">Colombia (+57)</option>
+                                                            <option value="506">Costa Rica (+506)</option>
+                                                            <option value="385">Croacia (+385)</option>
+                                                            <option value="53">Cuba (+53)</option>
+                                                            <option value="599">Curazao (+599)</option>
+                                                            <option value="45">Dinamarca (+45)</option>
+                                                            <option value="593">Ecuador (+593)</option>
+                                                            <option value="20">Egipto (+20)</option>
+                                                            <option value="503">El Salvador (+503)</option>
+                                                            <option value="971">Emiratos Árabes Unidos (+971)</option>
+                                                            <option value="593">Eritrea (+291)</option>
+                                                            <option value="421">Eslovaquia (+421)</option>
+                                                            <option value="386">Eslovenia (+386)</option>
+                                                            <option value="34">España (+34)</option>
+                                                            <option value="1">Estados Unidos (+1)</option>
+                                                            <option value="372">Estonia (+372)</option>
+                                                            <option value="251">Etiopía (+251)</option>
+                                                            <option value="63">Filipinas (+63)</option>
+                                                            <option value="358">Finlandia (+358)</option>
+                                                            <option value="33">Francia (+33)</option>
+                                                            <option value="241">Gabón (+241)</option>
+                                                            <option value="220">Gambia (+220)</option>
+                                                            <option value="995">Georgia (+995)</option>
+                                                            <option value="49">Alemania (+49)</option>
+                                                            <option value="233">Ghana (+233)</option>
+                                                            <option value="30">Grecia (+30)</option>
+                                                            <option value="502">Guatemala (+502)</option>
+                                                            <option value="509">Haití (+509)</option>
+                                                            <option value="504">Honduras (+504)</option>
+                                                            <option value="36">Hungría (+36)</option>
+                                                            <option value="91">India (+91)</option>
+                                                            <option value="62">Indonesia (+62)</option>
+                                                            <option value="98">Irán (+98)</option>
+                                                            <option value="964">Irak (+964)</option>
+                                                            <option value="353">Irlanda (+353)</option>
+                                                            <option value="972">Israel (+972)</option>
+                                                            <option value="39">Italia (+39)</option>
+                                                            <option value="81">Japón (+81)</option>
+                                                            <option value="962">Jordania (+962)</option>
+                                                            <option value="7">Kazajistán (+7)</option>
+                                                            <option value="254">Kenia (+254)</option>
+                                                            <option value="965">Kuwait (+965)</option>
+                                                            <option value="371">Letonia (+371)</option>
+                                                            <option value="961">Líbano (+961)</option>
+                                                            <option value="370">Lituania (+370)</option>
+                                                            <option value="352">Luxemburgo (+352)</option>
+                                                            <option value="853">Macao (+853)</option>
+                                                            <option value="261">Madagascar (+261)</option>
+                                                            <option value="60">Malasia (+60)</option>
+                                                            <option value="223">Malí (+223)</option>
+                                                            <option value="356">Malta (+356)</option>
+                                                            <option value="52">México (+52)</option>
+                                                            <option value="373">Moldavia (+373)</option>
+                                                            <option value="377">Mónaco (+377)</option>
+                                                            <option value="976">Mongolia (+976)</option>
+                                                            <option value="212">Marruecos (+212)</option>
+                                                            <option value="258">Mozambique (+258)</option>
+                                                            <option value="95">Myanmar (+95)</option>
+                                                            <option value="264">Namibia (+264)</option>
+                                                            <option value="977">Nepal (+977)</option>
+                                                            <option value="31">Países Bajos (+31)</option>
+                                                            <option value="64">Nueva Zelanda (+64)</option>
+                                                            <option value="505">Nicaragua (+505)</option>
+                                                            <option value="234">Nigeria (+234)</option>
+                                                            <option value="47">Noruega (+47)</option>
+                                                            <option value="92">Pakistán (+92)</option>
+                                                            <option value="507">Panamá (+507)</option>
+                                                            <option value="595">Paraguay (+595)</option>
+                                                            <option value="51">Perú (+51)</option>
+                                                            <option value="48">Polonia (+48)</option>
+                                                            <option value="351">Portugal (+351)</option>
+                                                            <option value="974">Qatar (+974)</option>
+                                                            <option value="40">Rumanía (+40)</option>
+                                                            <option value="7">Rusia (+7)</option>
+                                                            <option value="966">Arabia Saudita (+966)</option>
+                                                            <option value="221">Senegal (+221)</option>
+                                                            <option value="65">Singapur (+65)</option>
+                                                            <option value="421">Eslovaquia (+421)</option>
+                                                            <option value="27">Sudáfrica (+27)</option>
+                                                            <option value="82">Corea del Sur (+82)</option>
+                                                            <option value="34">España (+34)</option>
+                                                            <option value="94">Sri Lanka (+94)</option>
+                                                            <option value="46">Suecia (+46)</option>
+                                                            <option value="41">Suiza (+41)</option>
+                                                            <option value="886">Taiwán (+886)</option>
+                                                            <option value="255">Tanzania (+255)</option>
+                                                            <option value="66">Tailandia (+66)</option>
+                                                            <option value="90">Turquía (+90)</option>
+                                                            <option value="380">Ucrania (+380)</option>
+                                                            <option value="971">Emiratos Árabes Unidos (+971)</option>
+                                                            <option value="44">Reino Unido (+44)</option>
+                                                            <option value="1">Estados Unidos (+1)</option>
+                                                            <option value="598">Uruguay (+598)</option>
+                                                            <option value="998">Uzbekistán (+998)</option>
+                                                            <option value="58">Venezuela (+58)</option>
+                                                            <option value="84">Vietnam (+84)</option>
+                                                            <option value="967">Yemen (+967)</option>
+                                                            <option value="260">Zambia (+260)</option>
+                                                            <option value="263">Zimbabue (+263)</option>
+                                                    </select>
+                                                    <div class="invalid-feedback">Selecciona un prefijo.</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mb-4">
+                                                <div class="form-group">
+                                                    <input type="tel" class="form-control" name ="Estudiante_Phone" id="Estudiante_Phone" required>
+                                                    <label class="label_input" for="">Teléfono</label>
+                                                    <div class="invalid-feedback">Ingresa solo números (6 a 15 dígitos), según tu país</div>
+                                                </div>
+                                            </div>
+                                            <!-- bloque input empresa -->
+                                            <div class="col-12 mb-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name ="Empresa" id ="Empresa" required>
+                                                    <label class="label_input" for="">Empresa</label>
+                                                    <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                </div>
+                                            </div>
+                                            <!-- bloque input cargo -->
+                                            <div class="col-12 mb-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name ="Puesto" id ="Puesto" required>
+                                                    <label class="label_input" for="">Cargo</label>
+                                                    <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                </div>
+                                            </div>
+                                            <!-- bloque años laborados -->
+                                            <div class="col-12 mb-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name ="aos_laborados_en_gerencia_alta_o_superior" id ="aos_laborados_en_gerencia_alta_o_superior" required>
+                                                    <label class="label_input" for="">Años laborados en gerencia alta o superior</label>
+                                                    <div class="invalid-feedback">Este campo es obligatorio.</div>
+                                                </div>
+                                            </div>
+                                          <div class="col-12 mb-4">
+                                                <div class="form-group">
+                                                    <label class="label_input d-none" for="">Medio preferido de contacto</label>
+                                                    <select name="Medio_Contacto" id="Medio_Contacto" class="form-control form-select" required>
+                                                        <option value="" disabled selected>Selecciona medio de contacto</option>
+                                                        <option value="Llamada telefónica">Llamada telefónica</option>
+                                                        <option value="WhatsApp">WhatsApp</option>
+                                                        <option value="Correo">Correo</option>
+                                                    </select>
+                                                    <div class="invalid-feedback">Selecciona un medio.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row justify-content-center">
+                                            <div class="col-12">
+                                                <!-- Terminos y condiciones -->
+                                                <div class="form-check terms mt-4">
+                                                    <input class="form-check-input" type="checkbox" value="true" id="aviso_privacidad" name ="aviso_privacidad">
+                                                    <!-- agregar enlace de terminos y condiciones en el href -->
+                                                    <label class="form-check-label">
+                                                        He leído y acepto los términos y condiciones del 
+                                                        <a href="https://tec.mx/es/aviso-de-privacidad-prospectos" target="_blank" rel="noopener noreferrer">AVISO DE PRIVACIDAD</a>
+                                                    </label>
+                                                    <div class="invalid-feedback">Acepta el aviso de privacidad.</div>
+                                                </div>
+                                                <!-- Consentimiento whatsapp -->
+                                                <div class="form-check terms mt-4">
+                                                  <input class="form-check-input" type="checkbox" value="true" name="comunicacion_whatsapp">
+                                                  <label class="form-check-label">
+                                                      Quiero recibir comunicación vía WhatsApp
+                                                  </label>
+                                                </div>
+                                                <!-- Campos ocultos -->
+                                                    <div id="Informacion_Atribucion">
+                                                        <input static id="utm_campaign" name="utm_campaign" type="hidden" value="%%=RequestParameter('utm_campaign')=%%" />
+                                                        <input static id="utm_source" name="utm_source" type="hidden" value="%%=RequestParameter('utm_source')=%%" />
+                                                        <input static id="utm_term" name="utm_term" type="hidden" value="%%=RequestParameter('utm_term')=%%" />
+                                                        <input static id="utm_content" name="utm_content" type="hidden" value="%%=RequestParameter('utm_content')=%%" />
+                                                        <input static id="utm_medium" name="utm_medium" type="hidden" value="%%=RequestParameter('utm_medium')=%%" />
+                                                        <input static id="utm_cve_sede_iniciativa" name="utm_cve_sede_iniciativa" type="hidden" value="%%=RequestParameter('utm_cve_sede_iniciativa')=%%" />
+                                                        <input static id="utm_cve_periodo_iniciativa" name="utm_cve_periodo_iniciativa" type="hidden" value="%%=RequestParameter('utm_cve_periodo_iniciativa')=%%" />
+                                                        <input static id="adm_url_landing__c" name="adm_url_landing__c" type="hidden" value="%%=RequestParameter('PAGEURL')=%%" />
+                                                        <input name="adm_wl_clave_origen__c" type="hidden" value="Marketing Digital" />
+                                                        <input name="adm_wl_clave_estatus__c" type="hidden" />
+                                                        <input name="adm_sistema_origen__c" type="hidden" value="Marketing Cloud" />
+                                                        <input name="adm_wl_clave_nivel__c" type="hidden" value="08" />
+                                                        <input name="business_unit__pivote_" type="hidden" value="Egade" />
+                                                        <input name="Tipo_Formulario" type="hidden" value="Educacion Ejecutiva" />
+                                                        <input static id="campus_de_interes_pivote" name="campus_de_interes_pivote" type="hidden" value="Online" />
+                                                      <input type="hidden" name="Estudiante_CodePhone" id="Estudiante_CodePhone" value="" />
+                                                    </div>
+                                            </div>
+                                            <div class="col-12 col-md-8 mt-4 text-center">
+                                                <button class="btn btn-cta is-blue-secondary w-100" type="submit">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                        <script>
+                                            const form = document.getElementById('Formulario');
+                    
+                                            form.addEventListener('submit', function (e) {
+                                            e.preventDefault();
+                    
+                                            let valid = true;
+                                            const requiredFields = form.querySelectorAll('[required]');
+                                            requiredFields.forEach(field => {
+                                                if (!field.value.trim()) {
+                                                field.classList.add('is-invalid');
+                                                valid = false;
+                                                } else {
+                                                field.classList.remove('is-invalid');
+                                                }
+                                            });
+                    
+                                            const emailField = document.getElementById('Estudiante_Email');
+                                            const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+                                            if (!emailRegex.test(emailField.value.trim())) {
+                                                emailField.classList.add('is-invalid');
+                                                valid = false;
+                                            } else {
+                                                emailField.classList.remove('is-invalid');
+                                            }
+                    
+                                            const celular = document.getElementById('Estudiante_Phone');
+                                            if (!/^[0-9]{6,15}$/.test(celular.value.trim())) {
+                                                celular.classList.add('is-invalid');
+                                                valid = false;
+                                            } else {
+                                                celular.classList.remove('is-invalid');
+                                            }
+                                            // Validar el checkbox de aviso de privacidad
+                                            const avisoCheckbox = document.getElementById('aviso_privacidad');
+                                                if (!avisoCheckbox.checked) {
+                                                avisoCheckbox.classList.add('is-invalid');
+                                                valid = false;
+                                                } else {
+                                                avisoCheckbox.classList.remove('is-invalid');
+                                                }
+                                              
+                                              // Copiar el valor del prefijo al campo oculto estudiante_code
+                                          const prefijo = document.getElementById('prefijo');
+                                          document.getElementById('Estudiante_CodePhone').value = prefijo.value;
+                                              
+                                            if (valid) {
+                                              form.removeEventListener('submit', arguments.callee);
+                                              form.submit();
+                                            }
+                                            });
+                                        </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+  <!-- JQUERY -->
+    <script src='https://code.jquery.com/jquery-1.8.3.min.js'></script>
+    <!-- JS BOOTSTRAP -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js' integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2' crossorigin='anonymous'></script>
+    <!-- fontawesome -->
+    <script src="https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/sxbmdrr5hgj"></script>
+    <!-- SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/txhqp3yfpym"></script>
+    <script src="https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/ghs1cc0yolh"></script>
+    <script>
+        $('.counter').countUp({
+                'time': 3500,
+                'delay': 10
+        });
+    </script>
+</body>
+
+
+</html>
