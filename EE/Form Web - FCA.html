@@ -126,26 +126,75 @@ SET @nivel = "08"
         font-weight: 600;
     }
     </style>
+    <style>
+        form .form-check.terms .form-check-label { 
+            color: #ffffff;
+        }
+        form .form-check.terms .form-check-label a {
+            color: #ffffff;
+        }
+        label, label:not(.hs-error-msg) {
+            color: #FFFFFF;
+            margin: -10px 0px 0px 0px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        form .form-control {
+            /* display: inline-block; */
+            /* width: 90%; */
+            /* max-width: 500px; */
+            /* height: 40px; */
+            padding: 9px 10px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 22px;
+            color: #000000;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            border-radius: 25px;
+            background: #ffffff !important;
+            margin: 20px 0px 0px 0px;
+        }
+        .btn.is-blue-secondary:hover, .btn.is-blue-secondary:focus, .btn.is-blue-secondary:active {
+            color: #fff;
+            border-color: #ff7a59;
+            background-color: #ff7a59;
+
+        }
+        .btn.is-blue-secondary {
+            color: #fff;
+            background-color: #d24937;
+        }
+        .invalid-feedback { 
+            margin-top: .2rem;
+            font-size: .85em;
+            color: #ff9626;
+        }
+        body{
+           background-color: #5AC3EE; 
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class='container-fluid noPadding'>
+    <div class=' '>
         <!-- Content -->
         <!-- cs-header -->
 
                 <!-- Formulario -->
-                <div class="col-lg-6 bg-light">
-                    <div class="container d-lg-flex ">
-                        <div class="row justify-content-center w-100">
-                            <div class="col-12 col-lg-8 d-lg-flex align-items-center noPadding">
+                <div class="">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 ">
                                 <div class="form-content py-5 py-lg-4">
                                     <form id="Formulario"method="POST" novalidate action="https://egade-admisiones.tec.mx/egade-process">
                                       <input type="hidden" name="isSubmitted" value="true" />
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h1 class="mb-5">Llena el formulario y descarga el folleto</h1>
-                                            </div>
+                                        <div class="row"> 
                                           <div class="col-12 col-lg-6 mb-4" style="display:none">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="programa_de_interes_pivote" 
