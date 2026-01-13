@@ -9,6 +9,7 @@ SET @sede1 = Lookup("EE_Landing_Information", "Sede1", "Nombre_Landing", @progra
 SET @sede2 = Lookup("EE_Landing_Information", "Sede2", "Nombre_Landing", @programa)
 SET @sede3 = Lookup("EE_Landing_Information", "Sede3", "Nombre_Landing", @programa)
 SET @sede4 = Lookup("EE_Landing_Information", "Sede4", "Nombre_Landing", @programa)
+SET @sede5 = Lookup("EE_Landing_Information", "Sede5", "Nombre_Landing", @programa)
 ]%%
 
 <!-- Setear esta variable es para especificar de donde van a salir los campos del prellenado -->
@@ -437,6 +438,7 @@ SET @nivel = "08"
       <option value="%%=v(@sede2)=%%">%%=v(@sede2)=%%</option>
       <option value="%%=v(@sede3)=%%">%%=v(@sede3)=%%</option>
       <option value="%%=v(@sede4)=%%">%%=v(@sede4)=%%</option>
+      <option value="%%=v(@sede5)=%%">%%=v(@sede5)=%%</option>
 
     </select>
     <div class="invalid-feedback">Selecciona una sede.</div>
