@@ -110,3 +110,8 @@
 .wufoo li.focused {
     background-color: #transparent; !important;
 }
+
+.wufoo .info, .wufoo .paging-context {
+     
+    display: none;
+}
