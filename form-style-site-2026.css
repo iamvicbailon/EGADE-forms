@@ -62,7 +62,7 @@
     height: 2.35rem !important;   
     background-color: transparent !important;
     border: none !important;   
-    border-bottom: 1px solid #000234;
+    border-bottom: 1px solid #000234 !important;;
     border-radius: 0 !important;  
     padding-left: 0 !important;  
         background: none !important;
@@ -76,7 +76,7 @@
     font-size: 0.813rem !important;   
     line-height: 2 !important;   
     color: #000234 !important;   
-    pointer-events: none !important;  ;
+    pointer-events: none !important;  
     transition: 0.25s ease all !important;   
 }
 
