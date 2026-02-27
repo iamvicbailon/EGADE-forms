@@ -106,3 +106,7 @@
     background-color: #060721;
     border: 1px solid #060721;
 }
+
+.wufoo li.focused {
+    background-color: #transparent; !important;
+}
