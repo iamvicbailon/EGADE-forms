@@ -58,6 +58,7 @@
 
 
    .wufoo input.text {
+    font-family: 'Inter'!important;
     color: #0023A0 !important;  
     height: 2.35rem !important;   
     background-color: transparent !important;
@@ -69,6 +70,7 @@
 }
 
 .wufoo label.desc { 
+    font-family: 'Inter'!important;
     top: 0 !important;  
     left: 0 !important;   
     width: 100% !important;   
@@ -77,10 +79,12 @@
     line-height: 2 !important;   
     color: #000234 !important;   
     pointer-events: none !important;  
-    transition: 0.25s ease all !important;   
+    transition: 0.25s ease all !important;    
+    font-weight: normal!important;
 }
 
 .wufoo input.btTxt {
+    font-family: 'Inter'!important;
     color: #fff;
     border-color: #000234;
     background-color: #000234;
