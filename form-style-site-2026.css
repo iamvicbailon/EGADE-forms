@@ -58,25 +58,25 @@
 
 
    .wufoo input.text {
-    color: #0023A0;
-    height: 2.35rem;
+    color: #0023A0 !important;  ;
+    height: 2.35rem !important;  ;
     background-color: transparent !important;
-    border: none;
+    border: none !important;  ;
     border-bottom: 1px solid #000234;
-    border-radius: 0;
-    padding-left: 0;
+    border-radius: 0 !important;  ;
+    padding-left: 0 !important;  ;
 }
 
 .wufoo label.desc { 
-    top: 0;
-    left: 0;
-    width: 100%;
-    transform: translateY(0%);
-    font-size: 0.813rem;
-    line-height: 2;
-    color: #000234;
-    pointer-events: none;
-    transition: 0.25s ease all;
+    top: 0 !important;  ;
+    left: 0 !important;  ;
+    width: 100% !important;  ;
+    transform: translateY(0%) !important;  ;
+    font-size: 0.813rem !important;  ;
+    line-height: 2 !important;  ;
+    color: #000234 !important;  ;
+    pointer-events: none !important;  ;
+    transition: 0.25s ease all !important;  ;
 }
 
 .wufoo form input[type="submit" i] {
