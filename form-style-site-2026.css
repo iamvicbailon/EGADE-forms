@@ -57,7 +57,7 @@
     }
 
 
-    input.text, input.search, input.file, textarea.textarea, select.select, .recaptcha-text{
+   .wufoo input.text {
     color: #0023A0;
     height: 2.35rem;
     background-color: transparent !important;
@@ -67,7 +67,7 @@
     padding-left: 0;
 }
 
-form label { 
+.wufoo label.desc { 
     top: 0;
     left: 0;
     width: 100%;
@@ -79,7 +79,7 @@ form label {
     transition: 0.25s ease all;
 }
 
-form input[type="submit" i] {
+.wufoo form input[type="submit" i] {
     color: #fff;
     border-color: #000234;
     background-color: #000234;
