@@ -127,3 +127,7 @@ form li.buttons {
     color: #000234 !important;
     font-size: 14px;
 }
+
+textarea:focus, input:focus{
+    outline: none !important;
+}
