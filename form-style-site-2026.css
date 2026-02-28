@@ -133,3 +133,6 @@ form li.buttons {
 .wufoo input.btTxt:focus{
     outline: none !important;
 }
+textarea:focus, input:focus{
+    outline: none !important;
+}
