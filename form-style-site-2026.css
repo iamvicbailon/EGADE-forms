@@ -128,7 +128,7 @@ form li.buttons {
     padding: 20px 30px;
     font-family: 'Inter', sans-serif;
     color: #000234 !important;
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .wufoo input.btTxt:focus{
@@ -137,3 +137,4 @@ form li.buttons {
 textarea:focus, input:focus{
     outline: none !important;
 }
+
