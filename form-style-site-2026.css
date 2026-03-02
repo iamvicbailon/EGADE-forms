@@ -56,8 +56,24 @@
         font-weight: 600;
     }
 
-
+.wufoo label.desc, .wufoo legend.desc, .likert caption {
+    
+    font-family: 'Inter'!important; 
+}
    .wufoo input.text {
+    font-family: 'Inter'!important;
+    color: #0023A0 !important;  
+     background-color: transparent !important;
+    border: none !important;   
+    border-bottom: 1px solid #000234 !important;;
+    border-radius: 0 !important;  
+    padding-left: 0 !important;  
+        background: none !important;
+        font-size: 16px !important;
+}
+
+.wufoo select.select {
+    
     font-family: 'Inter'!important;
     color: #0023A0 !important;  
      background-color: transparent !important;
@@ -128,7 +144,7 @@ form li.buttons {
     padding: 20px 30px;
     font-family: 'Inter', sans-serif;
     color: #000234 !important;
-    font-size: 12px !important;
+    font-size: 12px;
 }
 
 .wufoo input.btTxt:focus{
@@ -137,4 +153,3 @@ form li.buttons {
 textarea:focus, input:focus{
     outline: none !important;
 }
-
