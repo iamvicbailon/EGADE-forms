@@ -61,15 +61,15 @@
     font-family: 'Inter'!important; 
 }
    .wufoo input.text {
-    font-family: 'Inter'!important;
-    color: #fff !important;  
-     background-color: transparent !important;
-    border: none !important;   
-    border-bottom: 1px solid #fff !important;;
-    border-radius: 0 !important;  
-    padding-left: 0 !important;  
-        background: none !important;
-        font-size: 16px !important;
+    font-family: 'Inter' !important;
+    color: #0e2668 !important;
+    background-color: #ffffff !important;
+    border: 8px solid #fff !important;
+    border-radius: 50px !important;
+    padding-left: 0 !important;
+    font-size: 16px !important;
+    /* padding: 8px 0px 8px 0px; */
+    /* margin-right: 77px; */
 }
 
 .wufoo select.select {
@@ -168,4 +168,12 @@ textarea:focus, input:focus{
 
 .wufoo legend.desc a { 
     color: #fff !important;
+}
+
+.wufoo li.focused label.desc, .wufoo li.focused legend.desc, .wufoo li.focused div, .wufoo li.focused span, .wufoo li.focused div label, .wufoo li.focused span label, .safari .wufoo li.focused input.file {
+    color: #ffffff;
+}
+
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select {
+    background: #FFFFFF !important; 
 }
