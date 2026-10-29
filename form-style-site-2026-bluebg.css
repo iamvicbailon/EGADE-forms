@@ -104,8 +104,8 @@
     cursor: pointer;
     font-family: 'Inter'!important;
     color: #fff;
-    border-color: #000234;
-    background-color: #000234;
+    border-color: #d24937;
+    background-color: #d24937;
     position: relative;
     font-style: normal;
     font-size: 0.875rem;
@@ -120,11 +120,11 @@
     font-size: 16px !important;
 }
 
-
 .wufoo input.btTxt:hover {
-    background-color: #060721;
-    border: 1px solid #060721;
+    background-color: #d24937;
+    border: 1px solid #d24937;
 }
+ 
 
 .wufoo li.focused {
     background-color: transparent !important;
@@ -159,4 +159,13 @@ textarea:focus, input:focus{
 }
 #container, html.embed {
     background-color: #0E2668;
+}
+
+.wufoo li div, .wufoo li span, .wufoo li div label, .wufoo li span label {
+    font-family: inherit;
+    color: #ffffff;
+}
+
+.wufoo legend.desc a { 
+    color: #fff !important;
 }
