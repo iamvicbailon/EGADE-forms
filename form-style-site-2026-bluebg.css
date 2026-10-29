@@ -181,5 +181,13 @@ textarea:focus, input:focus{
 form li.error {
     display: block !important;
     background-color: transparent !important; 
-    margin-bottom: 3px !important;
+    margin-bottom: 3px !important; 
+}
+
+form li.error .desc {
+    color: #d37c71 !important;
+}
+
+form p.error { 
+    color: #d37c71 !important; 
 }
