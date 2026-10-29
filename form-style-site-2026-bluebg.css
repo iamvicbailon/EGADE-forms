@@ -180,6 +180,6 @@ textarea:focus, input:focus{
 
 form li.error {
     display: block !important;
-    background-color: transparent; !important; 
+    background-color: transparent !important; 
     margin-bottom: 3px !important;
 }
