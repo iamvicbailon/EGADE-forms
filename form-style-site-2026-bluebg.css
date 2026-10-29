@@ -177,3 +177,9 @@ textarea:focus, input:focus{
 .wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select {
     background: #FFFFFF !important; 
 }
+
+form li.error {
+    display: block !important;
+    background-color: transparent; !important; 
+    margin-bottom: 3px !important;
+}
