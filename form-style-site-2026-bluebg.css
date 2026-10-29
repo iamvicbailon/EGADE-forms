@@ -191,3 +191,7 @@ form li.error .desc {
 form p.error { 
     color: #d37c71 !important; 
 }
+
+#errorMsg b { 
+    color: #d37c71 !important; 
+}
